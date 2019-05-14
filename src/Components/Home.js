@@ -11,7 +11,7 @@ const Home = ({ todos, toggleTodo }) => (
         {todos.map(todo =>
             <TouchableOpacity key={todo.id} onPress={() => toggleTodo(todo.id)}>
                 <Text style={{
-                    fontSize: 14,
+                    fontSize: 13,
                     textDecorationLine: todo.completed ? 'line-through' : 'none'
                 }}>{todo.text}</Text>
             </TouchableOpacity>

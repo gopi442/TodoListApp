@@ -15,25 +15,11 @@ import Home from './src/Components/Login'
 import TodoApp from './src/TodoApp'
 
 
-// const App = () => (
-// <Provider store={store}>
-// {/* <Router>
-//     <Stack key="root">
-//       <Scene key="login" component={Login} title="Login"/>
-//       <Scene key="home" component={Home}/>
-//     </Stack>
-//   </Router> */}
-
-//   </Provider>
-// );
-
 export default class App extends Component {
   render() {
     console.disableYellowBox = true
     return (
-      <Provider store={store}>
-        {/* <TodoApp/> */}
-        
+      <Provider store={store}>        
         <Router>
           <Stack key="root">
             <Scene key="login" component={Login} title="Login"/>
